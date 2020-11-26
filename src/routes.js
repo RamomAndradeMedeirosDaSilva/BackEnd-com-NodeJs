@@ -1,5 +1,5 @@
 const express = require('express');
-/*const crypto = require('crypto');
+/*const crypto = require('crypto');   = removeou e colou em UserController.js
 const connection = require('./database/connection');*/
 const routes = express.Router();
 const UserController = require('./controller/UserController');
