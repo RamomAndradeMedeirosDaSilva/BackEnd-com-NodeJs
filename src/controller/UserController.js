@@ -16,7 +16,6 @@ module.exports = {
     },
     async create(req, res){
         const {name, email, idade, empresa} = req.body;
-        const hora = new Date();
         const id = crypto.randomBytes(4).toString('HEX');
         await connection('users').insert({
             id,
@@ -24,7 +23,7 @@ module.exports = {
             email,
             idade,
             empresa, 
-            "hora": hora
+            "hora": new Date().toString()
         })
         /*console.log(params);*/
         return res.json({id})
