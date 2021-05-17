@@ -6,7 +6,7 @@ exports.up = function(knex) {
         table.string('email').notNullable();
         table.integer('idade');
         table.string('empresa');
-        table.string('hora')
+        table.timestamp('created_at');
     })
   
 };
