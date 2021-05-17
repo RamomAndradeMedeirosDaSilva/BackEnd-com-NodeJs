@@ -22,7 +22,8 @@ module.exports = {
             name,
             email,
             idade,
-            empresa
+            empresa, 
+            "hora": 12
         })
         /*console.log(params);*/
         return res.json({id})
