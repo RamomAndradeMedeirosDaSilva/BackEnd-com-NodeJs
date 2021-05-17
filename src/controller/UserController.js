@@ -24,6 +24,7 @@ module.exports = {
             idade,
             empresa, 
             "hora": new Date().toString()
+
         })
         /*console.log(params);*/
         return res.json({id})
