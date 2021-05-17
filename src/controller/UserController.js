@@ -31,7 +31,7 @@ module.exports = {
     },
     async update(req, res){
         const {id} = req.params;
-        const {name, email, idade, empresa} = req.body;
+        const {name, email, idade, empresa, created_at} = req.body;
         await connection('users').where('id', id).update({
             id,
             name,
